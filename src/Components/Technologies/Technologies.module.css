@@ -1,0 +1,98 @@
+.container {
+  background: var(--gray-accent);
+  width: 40%;
+  height: 6rem;
+  border-radius: 14px;
+  margin: -2rem 0rem;
+}
+
+:global(body) {
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+:global(main) {
+  width: min(1200px, 90vw);
+  margin: auto;
+}
+
+.slider {
+  width: 100%;
+  border-radius: 14px;
+  background: var(--gray-accent);
+  height: var(--height);
+  overflow: hidden;
+  --width: 100px;
+  --height: 50px;
+  --quantity: 10;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+  background: var(--gray-accent);
+  border-radius: 14px;
+}
+
+.item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  animation-delay: calc((18s / var(--quantity)) * (var(--position) - 1) - 18s) !important;
+  background: var(--gray-accent);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.item img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  background: var(--gray-accent);
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+
+.slider:hover .item {
+  animation-play-state: paused !important;
+}
+
+.slider[reverse="true"] .item {
+  animation: reversePlay 18s linear infinite;
+  filter: grayscale(0.4);
+}
+
+@keyframes reversePlay {
+  from {
+    left: calc(var(--width) * -1);
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}

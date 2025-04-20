@@ -1,0 +1,56 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --bg-color: #f8f8f8;
+  --text-color: #2a2a2a;
+  --text-alter: #191919;
+  --bg-alter: #e3e4e8;
+  --gray-accent: #e3e4e8;
+  --accent: #6ebaec;
+  transition:
+    background 0.1s ease-in-out,
+    color 0.1s ease-in-out,
+    transform 0.3s ease;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dark {
+  --bg-color: #1b1b1b;
+  --text-color: #f8f8f8;
+  --text-alter: #e1e1e1;
+  --bg-alter: #2b2b2b;
+  transition:
+    background 0.1s ease-in-out,
+    color 0.1s ease-in-out,
+    transform 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 6px;
+}
+
+::selection {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+* {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}

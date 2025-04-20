@@ -1,0 +1,101 @@
+.contact {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact div p {
+  padding: 0;
+}
+
+form {
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.contact input {
+  height: 2.2rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.5rem;
+  border: 2px solid var(--text-color);
+  border-radius: 4px;
+  /* width: 20vw; */
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+
+.contact input:hover,
+.contact textarea:hover {
+  transform: translateY(-1.4px);
+  border: 2px solid var(--accent);
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.status.error {
+  color: red;
+}
+
+.button {
+  background-color: transparent;
+  color: var(--text-color);
+  outline: 2px solid var(--text-color);
+  border: none;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 110px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 1rem 2rem;
+  min-width: 180px;
+}
+
+.button:hover {
+  background-color: var(--accent);
+  outline: var(--bg-alter);
+  color: white;
+  transform: translateY(-1.4px);
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 80%;
+  }
+}

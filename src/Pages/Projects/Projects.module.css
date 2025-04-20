@@ -1,0 +1,42 @@
+.projects {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.8rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.link {
+  font-size: 110%;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 0.1rem;
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+}

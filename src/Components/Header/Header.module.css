@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition:
+    background 0.1s ease-in-out,
+    color 0.1s ease-in-out,
+    transform 0.3s ease;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.switch {
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 4px 6px;
+  box-shadow: none;
+}
+
+.switch:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 0.1rem;
+}
+
+.header {
+  width: 100%;
+  padding: 0.6rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 2px 4px rgba(60, 60, 60, 0.1);
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  color: var(--text-alter);
+  font-size: 0.95rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.link:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 0.1rem;
+}
+
+.active::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .link {
+    font-size: 0.85rem;
+  }
+
+  .navLinks {
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .nav {
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0.4rem 0rem;
+    position: static;
+    box-shadow: none;
+    margin-bottom: -3.2rem;
+  }
+
+  .link {
+    font-size: 0.85rem;
+  }
+
+  .navLinks {
+    gap: 1.2rem;
+  }
+
+  .nav {
+    gap: 1rem;
+    margin: 0rem 2rem;
+  }
+
+  .switch {
+    padding: 2px 4px;
+    z-index: 1000;
+  }
+}

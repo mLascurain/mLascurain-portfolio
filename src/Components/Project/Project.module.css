@@ -1,0 +1,132 @@
+.project {
+  color: var(--text-color);
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  transition:
+    background 0.1s ease-in-out,
+    color 0.1s ease-in-out,
+    transform 0.3s ease;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.reverse span {
+  flex-direction: row-reverse;
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  width: 100%;
+}
+
+.project span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.image {
+  width: 35%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  width: 80%;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-color);
+  width: 80%;
+}
+
+.time {
+  font-size: 90%;
+  color: var(--text-alter);
+  /* text-decoration: underline; */
+  /* text-decoration-color: var(--accent); */
+  /* text-decoration-thickness: 0.1rem; */
+}
+
+.link {
+  margin: 0.2rem 0rem;
+  font-size: 105%;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 0.1rem;
+  width: fit-content;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.2rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.socialIcons a {
+  text-decoration: none;
+  width: 22px;
+  height: 22px;
+  color: inherit;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .project {
+    color: var(--text-color);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reverse {
+    gap: 0.5rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reverse span {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reverse {
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .reverse span {
+    gap: 0.4rem;
+  }
+
+  .image {
+    width: 80vw;
+  }
+}
