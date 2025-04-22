@@ -66,9 +66,9 @@
   }
 }
 
-.slider:hover .item {
-  animation-play-state: paused !important;
-}
+/* .slider:hover .item { */
+/*   animation-play-state: paused !important; */
+/* } */
 
 .slider[reverse="true"] .item {
   animation: reversePlay 18s linear infinite;
