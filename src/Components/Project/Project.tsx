@@ -3,6 +3,7 @@ import styles from "./Project.module.css";
 const Project = ({
   title,
   description,
+  stack,
   img,
   imgAlt,
   reverse,
@@ -11,6 +12,7 @@ const Project = ({
 }: {
   title: string;
   description: string;
+  stack: string;
   img: string;
   imgAlt: string;
   reverse: boolean;
@@ -24,6 +26,7 @@ const Project = ({
         <p className={styles.time}>{time}</p>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
+        <p className={styles.stack}>{stack}</p>
         <a
           href="https://drive.google.com/file/d/1kIAM-QEOj4dMTXz3JEuN2V8oS3QEC1kl/view"
           target="_blank"

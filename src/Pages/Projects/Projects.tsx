@@ -9,9 +9,9 @@ const About: React.FC = () => {
     <div className={styles.projects} id="projects">
       <h2 className={styles.title}>Some of my projects</h2>
       <div className={styles.container}>
-        <Project title="JMBoard" description="Full stack CRUD App for final collage project" img={jmboardimg} imgAlt="JMBoard image" reverse={true} time="2024 - Nov" github="https://github.com/mLascurain/JMboard-php" />
-        <Project title="Casa Diez Ventas" description="App to organize client purchase orders for Casa Diez" img={casadiezimg} imgAlt="CasaDiez image" reverse={true} time="2025 - Actuality" github="https://github.com/mLascurain/Casa-Diez-Ventas" />
-        <Project title="Fanco Spada Landing Page" description="Landing page and portfolio for Franco Spada" img={francospadaimg} imgAlt="Fanco Spada Landing Page Image" reverse={true} time="2025 - Jan" github="https://github.com/mLascurain/Franco-Spada-LandingPage" />
+        <Project title="JMBoard" description="Full stack CRUD Kanban board app for collage project" stack="HTML ・ CSS ・ JavaScript ・ PHP ・ MYSQL" img={jmboardimg} imgAlt="JMBoard image" reverse={true} time="2024 - Nov" github="https://github.com/mLascurain/JMboard-php" />
+        <Project title="Casa Diez Ventas" description="Frontend CRUD App to organize client purchase orders for Casa Diez" stack="HTML ・ CSS ・ JavaScript ・ React" img={casadiezimg} imgAlt="CasaDiez image" reverse={true} time="2025 - Apr" github="https://github.com/mLascurain/Casa-Diez-Ventas" />
+        <Project title="Fanco Spada Landing Page" description="Landing page and portfolio for Franco Spada" stack="HTML ・ CSS ・ JavaScript ・ React ・ Typescript" img={francospadaimg} imgAlt="Fanco Spada Landing Page Image" reverse={true} time="2025 - Jan" github="https://github.com/mLascurain/Franco-Spada-LandingPage" />
       </div>
       <a
         href="https://github.com/mLascurain/"

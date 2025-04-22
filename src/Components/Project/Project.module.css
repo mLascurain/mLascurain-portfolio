@@ -51,6 +51,14 @@
   font-size: 1rem;
   color: var(--text-color);
   width: 80%;
+  margin-bottom: 0.15rem;
+}
+
+.stack {
+  font-size: 75%;
+  font-weight: 600;
+  color: var(--text-alter);
+  width: 80%;
 }
 
 .time {
@@ -68,6 +76,7 @@
   text-decoration-color: var(--accent);
   text-decoration-thickness: 0.1rem;
   width: fit-content;
+  display: none;
 }
 
 .socialIcons {
