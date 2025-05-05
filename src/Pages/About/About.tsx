@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <div className={styles.about} id="about">
       <img className={styles.img} src={pfp} alt="image of matias lascurain" />
-      <p className={styles.minititle}>Sup, Im</p>
+      <p className={styles.minititle}>Hi, Im</p>
       <h1 className={styles.title}>Matias Lascurain</h1>
       <p className={styles.par}>I create reliable, maintainable web applications using modern tools and best practices. Whether independently or in a team, I’m always ready to create something amazing.</p>
       <a
