@@ -9,7 +9,7 @@ const About: React.FC = () => {
       <h1 className={styles.title}>Matias Lascurain</h1>
       <p className={styles.par}>I create reliable, maintainable web applications using modern tools and best practices. Whether independently or in a team, I’m always ready to create something amazing.</p>
       <a
-        href="https://drive.google.com/file/d/1kIAM-QEOj4dMTXz3JEuN2V8oS3QEC1kl/view"
+        href="https://drive.google.com/file/d/11bgE6JYZnddStcGDTQqGU5-vetCgnYh7/view"
         target="_blank"
         className={styles.link}
       >Curriculum vitae → </a>
