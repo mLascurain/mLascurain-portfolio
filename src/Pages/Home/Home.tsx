@@ -1,21 +1,23 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Home.module.css";
-import About from "../About/About.tsx"
+import About from "../About/About.tsx";
 import Projects from "../../Pages/Projects/Projects.tsx";
-import Contact from "../../Pages/Contact/Contact.tsx"
+import Contact from "../../Pages/Contact/Contact.tsx";
 import Technologies from "../../Components/Technologies/Technologies.tsx";
 import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton.tsx";
 import "../../index.css";
-import htmllogo from "../../assets/HTML5_logo.png"
-import csslogo from "../../assets/css-3.png"
-import jslogo from "../../assets/js.png"
-import reactlogo from "../../assets/physics.png"
-import nodelogo from "../../assets/programing.png"
-import typescriptlogo from "../../assets/typescript.png"
-import gitlogo from "../../assets/social.png"
-import githublogo from "../../assets/github.png"
-import linuxlogo from "../../assets/linux.png"
+import htmllogo from "../../assets/HTML5_logo.png";
+import csslogo from "../../assets/css-3.png";
+import jslogo from "../../assets/js.png";
+import reactlogo from "../../assets/physics.png";
+import nodelogo from "../../assets/programing.png";
+import typescriptlogo from "../../assets/typescript.png";
+import gitlogo from "../../assets/social.png";
+import githublogo from "../../assets/github.png";
+import linuxlogo from "../../assets/linux.png";
+import postgrelogo from "../../assets/icons8-postgresql-480.png";
+import mongologo from "../../assets/icons8-mongodb-480.png";
 
 const Home: React.FC = () => {
   const [status, setStatus] = useState<string | null>(null);
@@ -27,7 +29,8 @@ const Home: React.FC = () => {
     const lastSent = localStorage.getItem("lastSent");
     const now = Date.now();
 
-    if (lastSent && now - parseInt(lastSent) < 300000) { // 5 minutos
+    if (lastSent && now - parseInt(lastSent) < 300000) {
+      // 5 minutos
       setStatus("You already send a message.");
       return;
     }
@@ -67,7 +70,24 @@ const Home: React.FC = () => {
   return (
     <div className={styles.home}>
       <About />
-      <Technologies images={[linuxlogo, githublogo, gitlogo, typescriptlogo, nodelogo, reactlogo, jslogo, csslogo, htmllogo]} width="100px" height="100px" reverse />
+      <Technologies
+        images={[
+          linuxlogo,
+          githublogo,
+          gitlogo,
+          mongologo,
+          postgrelogo,
+          typescriptlogo,
+          nodelogo,
+          reactlogo,
+          jslogo,
+          csslogo,
+          htmllogo,
+        ]}
+        width="100px"
+        height="100px"
+        reverse
+      />
       <Projects />
       <Contact sendEmail={sendEmail} form={form} status={status} />
       <ScrollToTopButton />

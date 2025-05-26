@@ -42,7 +42,9 @@
   position: absolute;
   left: 100%;
   animation: autoRun 10s linear infinite;
-  animation-delay: calc((18s / var(--quantity)) * (var(--position) - 1) - 18s) !important;
+  animation-delay: calc(
+    (22s / var(--quantity)) * (var(--position) - 1) - 22s
+  ) !important;
   background: var(--gray-accent);
   border-radius: 14px;
   display: flex;
@@ -71,7 +73,7 @@
 /* } */
 
 .slider[reverse="true"] .item {
-  animation: reversePlay 18s linear infinite;
+  animation: reversePlay 22s linear infinite;
   filter: grayscale(0.4);
 }
 
