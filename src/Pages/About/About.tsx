@@ -13,7 +13,7 @@ const About: React.FC = () => {
         create something amazing.
       </p>
       <a
-        href="https://drive.google.com/file/d/1Q2DSUYKkva-oLc0fxci1UAkM8sfcAflH/view?usp=sharing"
+        href="https://drive.google.com/file/d/1wyZgoiP19mKjOSfibj4rSUxTYQbmikOZ/view?usp=sharing"
         target="_blank"
         className={styles.link}
       >
